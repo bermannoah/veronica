@@ -30,8 +30,7 @@ Veronica.generate_sha2(digest_bits: 256, string: "I've got a secret, a good one.
 
 You can also pass in an encoding_format:
 ```
-Veronica.generate_sha2(digest_bits: 256, string: "Don't forget about me, Veronica.
-", encoding_format: "base64digest")
+Veronica.generate_sha2(digest_bits: 256, string: "Don't forget about me, Veronica.", encoding_format: "base64digest")
 => "wyWcnqQlnMtEdgR23nOeGoDm3Z5wetAj5FHoIqXj2d4="
 ```
 
@@ -48,4 +47,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. Fee
 ## Contributing
 
 Bug reports and pull requests are welcome on [GitHub](https://github.com/bermannoah/veronica/issues).
-Please respect the [Code of Conduct](https://github.com/bermannoah/veronica/CODE_OF_CONDUCT.md).
+Please respect the [Code of Conduct](https://github.com/bermannoah/veronica/blob/master/CODE_OF_CONDUCT.md).
