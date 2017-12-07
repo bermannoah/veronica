@@ -15,6 +15,7 @@ module Veronica
       raise ArgumentError, "You can only use hexdigest, base64digest or just digest for an encoding format."
     end
 
+    # This lets us dynamically pass in digest_bits as well as encoding formats to the Digest class.
     Digest::SHA2.new(digest_bits).method(encoding_format.to_sym).(string)
   end
 end
