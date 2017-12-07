@@ -1,4 +1,5 @@
 require "veronica/version"
+require 'digest'
 
 module Veronica
   VALID_SHA2_BIT_LENGTHS = [256, 384, 512]

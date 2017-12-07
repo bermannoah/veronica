@@ -37,5 +37,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "simplecov", "~> 0.15"
   spec.add_development_dependency "pry", "~> 0.11"
   spec.add_development_dependency "zxcvbn-ruby", "~> 0.1.0"
-  spec.add_development_dependency "faker", "~> 1.8.0"
+  spec.add_development_dependency "faker", '~> 1.8', '>= 1.8.0'
 end
