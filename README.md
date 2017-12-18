@@ -1,5 +1,8 @@
 # Veronica
 
+[![security](https://hakiri.io/github/bermannoah/veronica/master.svg)](https://hakiri.io/github/bermannoah/veronica/master)
+[![Build Status](https://travis-ci.org/bermannoah/veronica.svg?branch=master)](https://travis-ci.org/bermannoah/veronica)
+
 A gem to make it easier for sardonic young detectives to keep secrets. 
 
 Under construction. May spontaneously accuse trusted community figures of murder, or simply not work.
