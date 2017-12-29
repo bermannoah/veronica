@@ -5,6 +5,8 @@
 
 A gem to make it easier for sardonic young detectives to keep secrets. 
 
+Basically just a wrapper around existing hashing/encrypting methods.
+
 Under construction. May spontaneously accuse trusted community figures of murder, or simply not work.
 
 ## Installation

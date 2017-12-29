@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["noah@noahberman.org"]
 
   spec.summary       = %q{A simple anonymizing gem.}
-  spec.description   = %q{Basically just a lot of wrappers around existing hashing/encrypting methods.}
+  spec.description   = %q{Basically just a wrapper around existing hashing/encrypting methods.}
   spec.homepage      = "https://github.com/bermannoah/veronica"
   spec.license       = "MIT"
   
@@ -29,7 +29,6 @@ Gem::Specification.new do |spec|
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
-
 
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 10.0"
