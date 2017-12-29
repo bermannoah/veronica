@@ -6,7 +6,7 @@ module Veronica
   VALID_SHA2_ENCODING_FORMATS = ["hexdigest", "base64digest", "digest"]
 
   # We use hexdigest by default for familiarities sake
-  def self.generate_sha2(digest_bits: , string: , encoding_format: "hexdigest")
+  def self.basic_sha2_string(digest_bits: , string: , encoding_format: "hexdigest")
     unless VALID_SHA2_BIT_LENGTHS.include?(digest_bits)
       raise ArgumentError, "You can only use 256, 384, or 512 for bit length."
     end
@@ -17,5 +17,9 @@ module Veronica
 
     # This lets us dynamically pass in digest_bits as well as encoding formats to the Digest class.
     Digest::SHA2.new(digest_bits).method(encoding_format.to_sym).(string)
+  end
+  
+  def self.openssl_sha2_string(digest_bits: , string: )
+    OpenSSL::Digest.digest(digest_bits, string)
   end
 end
