@@ -9,11 +9,11 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Noah Berman"]
   spec.email         = ["noah@noahberman.org"]
 
-  spec.summary       = %q{A simple anonymizing gem.}
+  spec.summary       = %q{A simple hashing gem.}
   spec.description   = %q{Basically just a wrapper around existing hashing/encrypting methods.}
   spec.homepage      = "https://github.com/bermannoah/veronica"
   spec.license       = "MIT"
-  
+
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
   if spec.respond_to?(:metadata)
@@ -30,7 +30,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.16"
+  spec.add_development_dependency "bundler", ">= 2.2.10"
   spec.add_development_dependency "rake", "~> 13.0"
   spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency "simplecov", "~> 0.15"
