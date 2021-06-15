@@ -1,7 +1,7 @@
 # Veronica
 
 [![security](https://hakiri.io/github/bermannoah/veronica/master.svg)](https://hakiri.io/github/bermannoah/veronica/master)
-[![Build Status](https://travis-ci.org/bermannoah/veronica.svg?branch=master)](https://travis-ci.org/bermannoah/veronica)
+[![Build Status](https://travis-ci.com/bermannoah/veronica.svg?branch=master)](https://travis-ci.com/github/bermannoah/veronica)
 
 A gem to make it easier for sardonic young detectives to keep secrets. 
 
