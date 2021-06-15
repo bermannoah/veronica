@@ -8,3 +8,6 @@ rvm:
 cache: bundler
 script:
   - bundle exec rspec
+branches:
+  only:
+    - master
