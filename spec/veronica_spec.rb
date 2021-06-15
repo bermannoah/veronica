@@ -22,7 +22,7 @@ RSpec.describe Veronica do
   end
   
   it "hashes a string with sha2 256" do
-    string = Faker::TheThickOfIt.character
+    string = Faker::Books::CultureSeries.culture_ship
     hash = Veronica.generate_sha2(digest_bits: 256, string: string)
     analysis = Zxcvbn.test(hash, [string])
 
@@ -31,7 +31,7 @@ RSpec.describe Veronica do
   end
 
   it "hashes a string with sha2 384" do
-    string = Faker::TheThickOfIt.character
+    string = Faker::Books::CultureSeries.culture_ship
     hash = Veronica.generate_sha2(digest_bits: 384, string: string)
     analysis = Zxcvbn.test(hash, [string])
 
@@ -40,7 +40,7 @@ RSpec.describe Veronica do
   end
 
   it "hashes a string with sha2 512" do
-    string = Faker::TheThickOfIt.character
+    string = Faker::Books::CultureSeries.culture_ship
     hash = Veronica.generate_sha2(digest_bits: 512, string: string)
     analysis = Zxcvbn.test(hash, [string])
     
@@ -49,7 +49,7 @@ RSpec.describe Veronica do
   end
 
   it "hashes a string with sha2 base64digest" do
-    string = Faker::TheThickOfIt.character
+    string = Faker::Books::CultureSeries.culture_ship
     hash = Veronica.generate_sha2(digest_bits: 512, string: string, encoding_format: "base64digest")
     analysis = Zxcvbn.test(hash, [string])
 
@@ -58,7 +58,7 @@ RSpec.describe Veronica do
   end
 
   it "hashes a string with sha2 digest" do
-    string = Faker::TheThickOfIt.character
+    string = Faker::Books::CultureSeries.culture_ship
     hash = Veronica.generate_sha2(digest_bits: 512, string: string, encoding_format: "digest")
     analysis = Zxcvbn.test(hash, [string])
     
@@ -67,7 +67,7 @@ RSpec.describe Veronica do
   end
 
   it "hashes a string the same way twice" do
-    string = Faker::TheThickOfIt.character
+    string = Faker::Books::CultureSeries.culture_ship
     hash = Veronica.generate_sha2(digest_bits: 512, string: string)
     
     expect(hash).to_not eq(string)
