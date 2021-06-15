@@ -13,6 +13,12 @@ Gem::Specification.new do |spec|
   spec.description   = %q{Basically just a wrapper around existing hashing/encrypting methods.}
   spec.homepage      = "https://github.com/bermannoah/veronica"
   spec.license       = "MIT"
+  spec.metadate      = {
+    "homepage_uri" => "https://github.com/bermannoah/veronica",
+    "changelog_uri" => "https://github.com/bermannoah/veronica/blob/master/CHANGELOG.md",
+    "source_code_uri" => "https://github.com/bermannoah/veronica",
+    "bug_tracker_uri" => "https://github.com/bermannoah/veronica/issues"
+  }
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
