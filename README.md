@@ -1,13 +1,12 @@
 # Veronica
 
-[![security](https://hakiri.io/github/bermannoah/veronica/master.svg)](https://hakiri.io/github/bermannoah/veronica/master)
 [![Build Status](https://travis-ci.com/bermannoah/veronica.svg?branch=master)](https://travis-ci.com/github/bermannoah/veronica)
 
 A gem to make it easier for sardonic young detectives to keep secrets. 
 
 Basically just a wrapper around existing hashing/encrypting methods.
 
-Under construction. May spontaneously accuse trusted community figures of murder, or simply not work.
+Not really actively maintained, use at your own risk. May spontaneously accuse trusted community figures of murder, or simply not work.
 
 ## Installation
 
